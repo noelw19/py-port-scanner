@@ -27,3 +27,5 @@ To set up queue:
     block processes until queue has emptied:
         q.join()
 
+
+I added extra at the end to find the service a port may be using at the end because when i added it to the function that prints port number + open, a few ports would be missing due to an OS/Proto error with getservbyport and so i added it to the end with a catch that prints an error occured allowing the user to try another port without the program crashing.
